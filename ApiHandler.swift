@@ -17,7 +17,7 @@ typealias VoidResponse = ( _ success : Bool) -> ()
 
 class ApiHandler: NSObject {
 
-    static func GetAPI(apiURL :String,apiName :String,parameters:Dict = ["":"" as AnyObject],withWalletId:Bool = true,postCompleted: @escaping ResponseAsDict)
+    static func GetAPI(apiURL :String,apiName :String,parameters:Dict = ["":"" as AnyObject],postCompleted: @escaping ResponseAsDict)
     {
 
         var items = [URLQueryItem]()
