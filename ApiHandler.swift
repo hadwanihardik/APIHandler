@@ -9,6 +9,12 @@
 import Foundation
 import MobileCoreServices
 let BaseURL  = ""//TODO:Add You Base URL Here
+
+typealias Dict = [String : AnyObject]
+typealias DictArray = [String : AnyObject]
+typealias ResponseAsDict = ( _ success : Bool,  _ response: Dict) -> ()
+typealias VoidResponse = ( _ success : Bool) -> ()
+
 class ApiHandler: NSObject {
 
     static func GetAPI(apiURL :String,apiName :String,parameters:Dict = ["":"" as AnyObject],withWalletId:Bool = true,postCompleted: @escaping ResponseAsDict)
